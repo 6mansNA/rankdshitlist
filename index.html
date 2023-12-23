@@ -9,86 +9,25 @@
     <link rel="mask-icon" href="https://cdn.discordapp.com/attachments/930975490460778566/1186382942872817695/Rx3820gggwb_400x400.png?ex=65930c37&amp;is=65809737&amp;hm=f20cc4f1c38bc516bd954c93b74b8282093c9cb081061e4e7e5db4926f9dc01a&amp;" color="#5bbad5">
     <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/930975490460778566/1186382942872817695/Rx3820gggwb_400x400.png?ex=65930c37&amp;is=65809737&amp;hm=f20cc4f1c38bc516bd954c93b74b8282093c9cb081061e4e7e5db4926f9dc01a&amp;">
     
+    <link rel="stylesheet" href="style.css">
+
     <meta property="og:title" content="6 Mans NA Shit List" />
     <meta property="og:description" content="The worst of the worst" />
     <meta property="og:image" content="https://cdn.discordapp.com/attachments/930975490460778566/1186415356659630140/tdd.png?ex=65932a67&is=6580b567&hm=b5d4313112f2eb5ded8824e0728516e9c30e6b73ec4e14681ed4dbf60b720197&" />
     <meta property="og:url" content="https://www.6mans.xyz" />
     <meta property="og:type" content="website" />
-    
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow-y: auto;
-            padding-top: 60px;
-        }
 
-        .content-title {
-            font-size: 40px;
-            color: #ff6b6b;
-            margin: 40px 0;
-            text-transform: uppercase;
-            text-align: center;
-            background-color: #121212; 
-            padding: 20px; 
-            border-radius: 5px; 
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-            width: max-content; 
-            max-width: 90%; 
-        }
-        
-        .embed-container {
-            background-color: #1f1f1f;
-            border: 1px solid #2d2d2d;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 10px 20px;
-            width: 500px;
-            text-align: center;
-            margin-bottom: 20px; 
-        }
-
-        .title {
-            font-size: 32px;
-            color: #4cd137;
-            margin-bottom: 15px;
-        }
-        
-        .subimage {
-            width: 400px;
-        }
-
-        .subtext {
-            font-size: 16px;
-            color: #a4b0be;
-            line-height: 1.5;
-        }
-
-        .bottom {
-            font-size: 16px;
-            color: #a4b0be;
-            line-height: 1.5;
-        }
-
-        .search-bar {
-            font-size: 16px;
-            padding: 10px;
-            margin: 20px 0;
-            width: 300px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-        }
-
-
-    </style>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">6 Mans NA List</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <!-- <a href="#list2" class="nav-link">List 2</a>
+            <a href="#list3" class="nav-link">List 3</a> -->
+
+        </div>
+    </nav>
     <input type="text" id="playerSearch" placeholder="Search for someone..." class="search-bar">
     <h2 class="content-title">6 Mans NA Shitter List</h2>
     <div class="embed-container">
@@ -251,6 +190,15 @@
                 }
             });
         });
+
+        window.onscroll = function() {
+            const navbar = document.querySelector('.navbar');
+            if(window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        };
     </script>
     
 </body>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.discordapp.com/attachments/930975490460778566/1186382942872817695/Rx3820gggwb_400x400.png?ex=65930c37&amp;is=65809737&amp;hm=f20cc4f1c38bc516bd954c93b74b8282093c9cb081061e4e7e5db4926f9dc01a&amp;">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.discordapp.com/attachments/930975490460778566/1186382942872817695/Rx3820gggwb_400x400.png?ex=65930c37&amp;is=65809737&amp;hm=f20cc4f1c38bc516bd954c93b74b8282093c9cb081061e4e7e5db4926f9dc01a&amp;">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.discordapp.com/attachments/930975490460778566/1186382942872817695/Rx3820gggwb_400x400.png?ex=65930c37&amp;is=65809737&amp;hm=f20cc4f1c38bc516bd954c93b74b8282093c9cb081061e4e7e5db4926f9dc01a&amp;">
+    <link rel="manifest" href="https://cdn.discordapp.com/attachments/930975490460778566/1186382942872817695/Rx3820gggwb_400x400.png?ex=65930c37&amp;is=65809737&amp;hm=f20cc4f1c38bc516bd954c93b74b8282093c9cb081061e4e7e5db4926f9dc01a&amp;">
+    <link rel="mask-icon" href="https://cdn.discordapp.com/attachments/930975490460778566/1186382942872817695/Rx3820gggwb_400x400.png?ex=65930c37&amp;is=65809737&amp;hm=f20cc4f1c38bc516bd954c93b74b8282093c9cb081061e4e7e5db4926f9dc01a&amp;" color="#5bbad5">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/930975490460778566/1186382942872817695/Rx3820gggwb_400x400.png?ex=65930c37&amp;is=65809737&amp;hm=f20cc4f1c38bc516bd954c93b74b8282093c9cb081061e4e7e5db4926f9dc01a&amp;">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:title" content="6 Mans NA Shit List" />
+    <meta property="og:description" content="The worst of the worst" />
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/930975490460778566/1186415356659630140/tdd.png?ex=65932a67&is=6580b567&hm=b5d4313112f2eb5ded8824e0728516e9c30e6b73ec4e14681ed4dbf60b720197&" />
+    <meta property="og:url" content="https://www.6mans.xyz" />
+    <meta property="og:type" content="website" />
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">6 Mans NA List</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <!-- <a href="#list2" class="nav-link">List 2</a>
+            <a href="#list3" class="nav-link">List 3</a> -->
+
+        </div>
+    </nav>
+    <input type="text" id="playerSearch" placeholder="Search for someone..." class="search-bar">
+    <h2 class="content-title">Gallery</h2>
+
+    <div class="gallery">
+        <div class="embed-container">
+            <h1 class="imgtitle">Cam</h1>
+            <img class="subimage" src="https://cdn.discordapp.com/attachments/1167324226546577548/1167324494101217300/file-Xmo6uCRDZzgiT2Oo2Y9fCSRU.png?ex=65978aa7&is=658515a7&hm=4ea922b151d90b1894432290d9ba04c06777398c67e14fe7a870dd410dfd2ebb&">
+        </div>
+        <div class="embed-container">
+            <h1 class="imgtitle">Cam</h1>
+            <img class="subimage" src="https://cdn.discordapp.com/attachments/1167324226546577548/1167324516372987914/file-6gt6Ujqmf8Zk6jYaZzbZdRiA.png?ex=65978aac&is=658515ac&hm=d2d7ca726934055040c5d181d3edc9f9a73b4c81067bea4c8c236a60fe9d8a8f&">
+        </div>
+        <div class="embed-container">
+            <h1 class="imgtitle">Lunar</h1>
+            <img class="subimage" src="https://media.discordapp.net/attachments/943358640335781919/1144063906151669841/GIFMaker_me_3.gif?ex=6595fa0a&is=6583850a&hm=6953f36ea325721b09b09bb35c846c78b3e25a706c9b0159f73b6f3cd2870f56&">
+        </div>
+        <div class="embed-container">
+            <h1 class="imgtitle">Lunar</h1>
+            <img class="subimage" src="https://cdn.discordapp.com/attachments/621742769643454467/1002294001543684136/ezgif-1-fe1ec24dd4.gif?ex=65970487&is=65848f87&hm=67e9db73b820e77732fa7fbe9293d81c92a8513f9a68c4982f947c68d8710232&">
+        </div>
+        <div class="embed-container">
+            <h1 class="imgtitle">Aris</h1>
+            <img class="subimage" src="https://media.discordapp.net/attachments/963235810331721738/1182902194891145266/image.png?ex=658f9d04&is=657d2804&hm=81caf7035f1134b94c045566a067643f605517431147311d669427c152e6c20c&=&format=webp&quality=lossless&width=765&height=1361">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('playerSearch');
+    
+            searchInput.addEventListener('keyup', function() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const containers = document.getElementsByClassName('embed-container');
+    
+                for (const container of containers) {
+                    const title = container.querySelector('.imgtitle').innerText.toLowerCase();
+                    if (title.includes(searchTerm)) {
+                        container.style.display = '';
+                    } else {
+                        container.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+        window.onscroll = function() {
+            const navbar = document.querySelector('.navbar');
+            if(window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        };
+    </script>
+    
+</body>
+</html>

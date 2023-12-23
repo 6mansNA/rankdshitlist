@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    padding-top: 60px;
+}
+
+.content-title {
+    font-size: 40px;
+    color: #ff6b6b;
+    margin: 40px 0;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #121212; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    width: max-content; 
+    max-width: 90%; 
+}
+
+.embed-container {
+    background-color: #1f1f1f;
+    border: 1px solid #2d2d2d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.title {
+    font-size: 32px;
+    color: #4cd137;
+    margin-bottom: 15px;
+}
+
+.imgtitle {
+    font-size: 16px;
+    color: #6c6c6c;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.subimage {
+    width: 400px;
+}
+
+.subtext {
+    font-size: 16px;
+    color: #a4b0be;
+    line-height: 1.5;
+}
+
+.bottom {
+    font-size: 16px;
+    color: #a4b0be;
+    line-height: 1.5;
+}
+
+.search-bar {
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px 0;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+    border: 1px solid #2d2d2d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Semi-transparent dark background */
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: calc(70%); /* Adjust width to allow for padding */
+    top: 10px; /* Distance from the top */
+    left: 50%; /* Centering the navbar */
+    transform: translateX(-50%);
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for floating effect */
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+}
+      
+.nav-link {
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px; /* Space between links */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and scale */
+}
+
+.nav-link:hover {
+    color: #4cd137; /* Highlight color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.navbar.scrolled {
+    background-color: #222; /* Slightly darker on scroll */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* creates three columns */
+    grid-gap: 20px; /* space between items */
+    padding: 20px; /* padding around the grid */
+}
